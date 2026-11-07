@@ -1,0 +1,12 @@
+name: discord-ai-image-block
+services:
+  discord-ai-image-block:
+    build: .
+    container_name: discord-ai-image-block
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/data   # records, saved posts, and removals.log (survives restarts/updates)
+      # Optional: keep the removal log somewhere else on the Zima box.
+      # Uncomment, change the left side, and set REMOVAL_LOG_FILE=/app/logs/removals.log in .env
+      # - /DATA/Logs/discord-ai-image-block:/app/logs

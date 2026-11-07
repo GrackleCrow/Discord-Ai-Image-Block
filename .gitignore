@@ -1,0 +1,25 @@
+# Secrets - never commit your bot token or API keys
+.env
+.env.*
+!.env.example
+
+# Runtime data: records database, saved (quarantined) posts, removal log
+data/
+logs/
+*.db
+*.db-wal
+*.db-shm
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+discord.py[speed]>=2.5
+aiohttp[speedups]>=3.9
+c2pa-python>=0.38
+pillow>=11.2
+pillow-heif>=0.18
+uvloop>=0.19
